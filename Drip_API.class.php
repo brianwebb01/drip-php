@@ -152,7 +152,7 @@ Class Drip_Api {
         $account_id = $params['account_id'];
         unset($params['account_id']); // clear it from the params
         
-        $api_action = "/$account_id/subscribers";
+        $api_action = "$account_id/subscribers";
         $url = $this->api_end_point . $api_action;
 
         // The API wants the params to be JSON encoded
